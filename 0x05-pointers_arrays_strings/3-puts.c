@@ -1,19 +1,20 @@
-#include "main.h"
-
+#include "holberton.h"
 /**
- * _puts - function with one argument
- * @str: one char type argument
+ *_puts - prints a string + newline
  *
- * Description: print a string follow by a new line to stdout
- * Return: none
+ *@str:input
+ *
+ *Return:void
+ *
  */
 void _puts(char *str)
 {
-int i = 0;
-while (str[i])
-{
-_putchar(str[i]);
-i++;
-}
-_putchar('\n');
+	int i = 0;
+
+	while (str[i] != '\0')
+	{
+		_putchar(str[i]);
+		i++;
+	}
+	_putchar('\n');
 }
